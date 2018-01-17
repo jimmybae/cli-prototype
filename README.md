@@ -1,2 +1,2 @@
 # cli-prototype
-Jimmy Bae Test
+gmobile-cli prototype project

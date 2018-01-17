@@ -174,7 +174,7 @@ var questionsFood = [{
 }];
 var questions;
 commander
-  .version('Glue Mobile CLI: 1.0.0')
+  .version('GMobile CLI: 1.0.0')
   .description('Application simple description')
   .arguments('<question>')
   .option('-v, --ver', 'Show version')
@@ -193,12 +193,12 @@ if (commander.ver) {
   //clear();
   console.log(
     chalk.blue(
-      figlet.textSync('GlueMobile CLI', { horizontalLayout: 'default', font: 'standard' })
+      figlet.textSync('GMobile CLI', { horizontalLayout: 'default', font: 'standard' })
     )
   );
-  console.log('Glue Mobile CLI: 0.0.1');
+  console.log('GMobile CLI: 0.0.1');
   console.log('Node: 9.4.0');
-  console.log('Glue Mobile: 2.0.0');
+  console.log('GMobile: 2.0.0');
   
   process.exit(1);
 }
@@ -212,14 +212,14 @@ if (typeof questions === 'undefined') {
 clear();
 console.log(
   chalk.blue(
-    figlet.textSync('GlueMobile CLI', { horizontalLayout: 'default', font: 'standard' })
+    figlet.textSync('GMobile CLI', { horizontalLayout: 'default', font: 'standard' })
   )
 );
 inquirer.prompt(questions).then(answers => {
   console.log(answers);
   console.log('-----------------------------------------');
   if(answers.router_name) console.log(chalk.yellow('update ') + 'js/app.js \'' + answers.router_name + '\' add');
-  if(answers.controller_function_name) console.log(chalk.yellow('update ') + 'js/controllers/GlueController.js \'' + answers.controller_function_name + '\' function add');
+  if(answers.controller_function_name) console.log(chalk.yellow('update ') + 'js/controllers/GController.js \'' + answers.controller_function_name + '\' function add');
   if(answers.view_name) console.log(chalk.green('create ') + 'js/views/' + answers.view_name + '.js');
   if(answers.model_name) console.log(chalk.green('create ') + 'js/models/' + answers.model_name + '.js');
   if(answers.collection_name) console.log(chalk.green('create ') + 'js/collections/' + answers.collection_name + '.js');

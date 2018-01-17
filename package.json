@@ -16,6 +16,6 @@
     "write": "^1.0.3"
   },
   "bin": {
-    "gluem": "./index.js"
+    "gmobile": "./index.js"
   }
 }
