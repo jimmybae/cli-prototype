@@ -1,21 +1,25 @@
 {
   "name": "cli-prototype",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "CLI tool for GMobile",
+  "repository": "https://github.com/jimmybae/cli-prototype",
+  "author": "GMobile Authors",
+  "license": "MIT",
+  "main": "./src/index.js",
+  "bin": {
+    "gmobile": "./src/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/jimmybae/cli-prototype/issues"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "clear": "0.0.1",
     "commander": "^2.12.2",
     "figlet": "^1.2.0",
     "inquirer": "^5.0.0",
     "write": "^1.0.3"
-  },
-  "bin": {
-    "gmobile": "./index.js"
   }
 }
