@@ -5,9 +5,9 @@
   "repository": "https://github.com/jimmybae/cli-prototype",
   "author": "GMobile Authors",
   "license": "MIT",
-  "main": "./src/index.js",
+  "main": "./index.js",
   "bin": {
-    "gmobile": "./src/index.js"
+    "gmobile": "./index.js"
   },
   "bugs": {
     "url": "https://github.com/jimmybae/cli-prototype/issues"
@@ -17,8 +17,10 @@
   },
   "dependencies": {
     "clear": "0.0.1",
+    "colors": "^1.1.2",
     "commander": "^2.12.2",
     "figlet": "^1.2.0",
+    "fs": "0.0.1-security",
     "inquirer": "^5.0.0",
     "write": "^1.0.3"
   }
