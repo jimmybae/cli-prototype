@@ -38,22 +38,22 @@ program
       init(projectName, projectType);
     }
   });
-
+/*
 program
-  .command('exec <cmd>')
-  .alias('ex')
-  .description('execute the given remote cmd')
+  .command('temp <cmd>')
+  .alias('tm')
+  .description('temporary the given remote cmd')
   .option("-e, --exec_mode <mode>", "Which exec mode to use")
   .action((cmd, options) => {
-    console.log('exec "%s" using %s mode', cmd, options.exec_mode);
+    console.log('temp "%s" using %s mode', cmd, options.exec_mode);
   }).on('--help', function() {
     console.log();
     console.log();
     console.log('  Examples:');
     console.log();
-    console.log('    $ deploy exec sequential');
-    console.log('    $ deploy exec async');
+    console.log('    $ temp sequential');
+    console.log('    $ temp async');
     console.log();
   });
-
+*/
   program.parse(process.argv);
