@@ -9,6 +9,7 @@ with NPM 3 or higher.
 * [Installation](#installation)
 * [Usage](#usage)
 * [Examples](#examples)
+* [Libraries](#libraries)
 * [License](#license)
 
 ## Installation
