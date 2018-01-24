@@ -3,6 +3,7 @@ const program = require('commander');
 const inquirer = require('inquirer');
 const { version } = require('./package.json');
 const init = require('./actions/init.js');
+const initStatic = require('./actions/init-static.js');
 
 const question = [{
   name: 'projectType',
@@ -33,9 +34,11 @@ program
       .then(answers => {
         projectType = answers.projectType;
         init(projectName, projectType);
+        initStatic(projectName, projectType);
       });
     } else {
       init(projectName, projectType);
+      initStatic(projectName, projectType);
     }
   });
 /*
