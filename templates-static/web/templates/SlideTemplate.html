@@ -1,0 +1,41 @@
+<div class="collapse navbar-collapse bg-dark" id="navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <hr class="mt-0 mb-2" />
+            <a href="#" class="nav-link text-light">
+                <h5><i class="fa fa-home"></i> Home</h5>
+            </a>
+        </li>
+        <li class="nav-item">
+            <hr class="mt-1 mb-2" />
+<% if(user && user.emp_name) { %>        
+            <a class="nav-link text-light" id="logout_link">
+                <h5><i class="fa fa-user"></i> Logout <small class="text-info"><%=user.emp_name%></small></h5>
+            </a>
+<% } else { %>
+            <a class="nav-link text-light" href="#login">
+                <h5><i class="fa fa-user"></i> Login</h5>
+            </a>
+<% } %>
+        
+        </li>
+        <li class="nav-item">
+            <hr class="mt-1 mb-2" />
+            <div id="push_toggle" class="nav-link text-light">
+                <h5>
+                    <i class="fa fa-podcast"></i>
+                    Push알람
+                    <div id="toggle" style="display: inline;">
+<% if(user && user.emp_name) { %>
+    <% if(user.registeration_id) { %>
+                        <i class="fa fa-toggle-on fa-lg text-success"></i>
+    <% } else { %>
+                        <i class="fa fa-toggle-off fa-lg text-light"></i>
+    <% } %>    
+<% } %>
+                    </div>
+                </h5>
+            </div>
+        </li>
+    </ul>
+</div>

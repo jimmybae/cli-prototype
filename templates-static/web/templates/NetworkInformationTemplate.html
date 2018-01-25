@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark row">
+    <div class="col-2 pr-0">
+        <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars fa-lg"></i>
+        </button>
+    </div>
+    <div class="col-8 pl-0 pr-0 text-center">
+        <div class="navbar-brand mr-0">
+            <i class="fa fa-wifi fa-lg text-default"></i> Network Information
+        </div>
+    </div>
+    <div class="col-2 pl-0 text-right">
+        <a href="#plugins" class="btn btn-dark">
+            <i class="fa fa-home fa-lg"></i>
+        </a>
+    </div>
+</nav>
+<div class="container-fluid" style="padding-top: 4.5rem;">
+    <div class="row">
+        <div class="col-12">
+            <ul id="listview" class="list-group">
+                <li class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">Unknown<span id="unknown" class="badge badge-dark"></span></li>
+                <li class="list-group-item list-group-item-primary d-flex justify-content-between align-items-center">Ethernet<span id="ethernet" class="badge badge-primary"></span></li>
+                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">WiFi<span id="wifi" class="badge badge-secondary">Connected</span></li>
+                <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">Cell 2G<span id="2g" class="badge badge-success"></span></li>
+                <li class="list-group-item list-group-item-danger d-flex justify-content-between align-items-center">Cell 3G<span id="3g" class="badge badge-danger"></span></li>
+                <li class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">Cell 4G<span id="4g" class="badge badge-warning"></span></li>
+                <li class="list-group-item list-group-item-info d-flex justify-content-between align-items-center">Cell generic<span id="cellular" class="badge badge-info"></span></li>
+                <li class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">No network<span id="none" class="badge badge-dark"></span></li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark row">
+    <div class="col-2 pr-0">
+        <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars fa-lg"></i>
+        </button>
+    </div>
+    <div class="col-8 pl-0 pr-0 text-center">
+        <div class="navbar-brand mr-0">
+            <i class="fa fa-battery fa-lg text-primary"></i> Battery
+        </div>
+    </div>
+    <div class="col-2 pl-0 text-right">
+        <a href="#plugins" class="btn btn-dark">
+            <i class="fa fa-home fa-lg"></i>
+        </a>
+    </div>
+</nav>
+<div class="container-fluid" style="padding-top: 4.5rem;">
+    <div class="row">
+        <div class="col-12">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-primary">Level<span class="badge badge-primary" id="battery_level">100%</span></li>
+                <li id="battery_plugged" class="list-group-item d-flex justify-content-between align-items-center list-group-item-info">Plugged<span class="badge badge-success">true</span></li>
+            </ul>
+            <div class="progress mt-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" style="width: 100%;">100%</div>
+            </div>
+        </div>
+    </div>
+</div>
