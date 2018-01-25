@@ -29,7 +29,7 @@ const createDirectoryContents = (templatePath, newProjectPath) => {
 };
 
 module.exports = (projectName, projectType) => {
-  const templatePath = `../templates-static/${projectType}`;
+  const templatePath = `${__dirname}/../templates-static/${projectType}`;
   const newProjectPath = `${projectName}${projectNameSubfix}`;
   if (!fs.existsSync(newProjectPath)) {
     fs.mkdirSync(newProjectPath);
