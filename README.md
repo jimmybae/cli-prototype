@@ -70,9 +70,9 @@ $ gmobile init my-project
 ? Select project type (Use arrow keys)
 ❯ web
   mobile
+[info] Project <my-project> initialized successfuly.
 ```
 ```sh
-[info] Project <my-project> initialized successfuly.
 $ cd my-project
 $ gmobile serve
 Server running at http://localhost:3000
