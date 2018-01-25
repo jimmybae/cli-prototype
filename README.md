@@ -18,7 +18,7 @@ npm install -g https://github.com/jimmybae/cli-prototype.git
 ```
 
 ## Usage
-- gmobile -h
+#### 1. gmobile -h
 ```sh
 $ gmobile -h
 
@@ -38,8 +38,7 @@ $ gmobile -h
     init [options] <projectName>  Initializes a GMobile project
     serve                         Easily test your web locally while developing.
 ```
-
-- gmobile init `<projectName>`
+#### 2. gmobile init `<projectName>`
 ```sh
 $ gmobile init -h
 
@@ -54,8 +53,7 @@ $ gmobile init -h
     -m, --mobile  Initializes mobile template
     -h, --help    output usage information
 ```
-
-- gmobile serve
+#### 3. gmobile serve
 ```sh
 $ gmobile serve -h
 
@@ -70,6 +68,7 @@ $ gmobile serve -h
 ```
 
 ## Examples
+#### 1. gmobile init `my-project`
 ```sh
 $ gmobile init my-project
 ? Select project type (Use arrow keys)
@@ -77,6 +76,7 @@ $ gmobile init my-project
   mobile
 [info] Project <my-project> initialized successfuly.
 ```
+#### 2. gmobile serve
 ```sh
 $ cd my-project
 $ gmobile serve
