@@ -35,6 +35,7 @@ $ gmobile -h
   Commands:
 
     init [options] <projectName>  Initializes a GMobile project
+    serve                         Easily test your web locally while developing.
 ```
 ```sh
 $ gmobile init -h
@@ -50,6 +51,18 @@ $ gmobile init -h
     -m, --mobile  Initializes mobile template
     -h, --help    output usage information
 ```
+```sh
+$ gmobile serve -h
+
+  Usage: serve [options]
+
+  Easily test your web locally while developing.
+
+
+  Options:
+
+    -h, --help  output usage information
+```
 
 ## Examples
 ```sh
@@ -61,6 +74,8 @@ $ gmobile init my-project
 ```sh
 [info] Project <my-project> initialized successfuly.
 $ cd my-project
+$ gmobile serve
+Server running at http://localhost:3000
 ```
 
 ## Libraries
