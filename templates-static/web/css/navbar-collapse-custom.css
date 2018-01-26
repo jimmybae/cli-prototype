@@ -1,0 +1,24 @@
+.navbar-collapse {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 66%;
+    z-index: 1;
+}
+.navbar-collapse.collapsing {
+    left: -100%;
+    /*-webkit-transition: left 0.1s ease;
+    -o-transition: left 0.1s ease;
+    -moz-transition: left 0.1s ease;
+    transition: left 0.1s ease;*/
+}
+.navbar-collapse.show {
+    left: 0;
+    /*-webkit-transition: left 0.1s ease-in;
+    -o-transition: left 0.1s ease-in;
+    -moz-transition: left 0.1s ease-in;
+    transition: left 0.1s ease-in;*/
+}

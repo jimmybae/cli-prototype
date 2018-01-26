@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark row">
+    <div class="col-2 pr-0">
+        <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars fa-lg"></i>
+        </button>
+    </div>
+    <div class="col-8 pl-0 pr-0 text-center">
+        <div class="navbar-brand mr-0">
+            <i class="fa fa-podcast fa-lg text-danger"></i> GCM Setting
+        </div>
+    </div>
+    <div class="col-2 pl-0 text-right">
+        <a href="#plugins" class="btn btn-dark">
+            <i class="fa fa-home fa-lg"></i>
+        </a>
+    </div>
+</nav>
+<div class="container-fluid" style="padding-top: 4.5rem;">
+    <div class="row">
+        <div class="col-12">
+            <label><b id="user_name">배광식</b>님 환영합니다.</label>
+            <ul id="listview" class="list-group mb-3">
+                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">알람수신<span id="noti" class="badge badge-success">on</span></li>
+            </ul>
+            <button type="button" class="btn btn-block btn-success" id="register_btn">
+                <i class="fa fa-toggle-on"></i> 알람수신 On
+            </button>
+            <button type="button" class="btn btn-block btn-danger" id="unregister_btn">
+                <i class="fa fa-toggle-off"></i> 알람수신 Off
+            </button>
+        </div>
+    </div>
+</div>

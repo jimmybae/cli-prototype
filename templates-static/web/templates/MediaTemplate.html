@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark row">
+    <div class="col-2 pr-0">
+        <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars fa-lg"></i>
+        </button>
+    </div>
+    <div class="col-8 pl-0 pr-0 text-center">
+        <div class="navbar-brand mr-0">
+            <i class="fa fa-play-circle fa-lg text-warning"></i> Media
+        </div>
+    </div>
+    <div class="col-2 pl-0 text-right">
+        <a href="#plugins" class="btn btn-dark">
+            <i class="fa fa-home fa-lg"></i>
+        </a>
+    </div>
+</nav>
+<div class="container-fluid" style="padding-top: 4.5rem;">
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Check Point</h4>
+                <p>예제에서 실행하는 미디어파일은 /Ringtones/hangouts_incoming_call.ogg입니다. 해당 미디어파일이 존재하지 않으면 단말기에 다른 미디어파일을 저장하고 MediaView.js파일을 수정하세요.</p>
+                <hr>
+                <p class="mb-0">MediaView.js 20 line:<br/>
+                    <code style="font-size: 9px;">var src = '/Ringtones/hangouts_incoming_call.ogg';</code>
+                </p>
+            </div>
+            <div class="progress mt-5">
+                <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="height: 3px;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-3">
+            <span id="timer" class="badge badge-danger">0</span>
+        </div>
+        <div class="col-9">
+            <div class="btn-group" role="group" aria-label="function">
+                <button id="start" type="button" class="btn btn-warning"><i class="fa fa-play"></i> Start</button>
+                <button id="pause" type="button" class="btn btn-info"><i class="fa fa-pause"></i> Pause</button>
+                <button id="stop" type="button" class="btn btn-dark"><i class="fa fa-stop"></i> Stop</button>
+            </div>
+        </div>
+    </div>
+</div>

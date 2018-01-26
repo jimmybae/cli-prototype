@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 const program = require('commander');
 const inquirer = require('inquirer');
+//const server = require('lite-server');
 const { version } = require('./package.json');
 const init = require('./actions/init.js');
 const initStatic = require('./actions/init-static.js');
+const serve = require('./actions/serve.js');
 
 const question = [{
   name: 'projectType',
@@ -26,37 +28,27 @@ program
   .action((projectName, options) => {
     let projectType = null;
 
-    if(options.webProject) projectType = 'web';
-    else if(options.mobileProject) projectType = 'mobile';
+    if(options.web) projectType = 'web';
+    else if(options.mobile) projectType = 'mobile';
 
     if(projectType == null) {
       inquirer.prompt(question)
       .then(answers => {
         projectType = answers.projectType;
-        init(projectName, projectType);
+        //init(projectName, projectType);
         initStatic(projectName, projectType);
       });
     } else {
-      init(projectName, projectType);
+      //init(projectName, projectType);
       initStatic(projectName, projectType);
     }
   });
-/*
+
 program
-  .command('temp <cmd>')
-  .alias('tm')
-  .description('temporary the given remote cmd')
-  .option("-e, --exec_mode <mode>", "Which exec mode to use")
-  .action((cmd, options) => {
-    console.log('temp "%s" using %s mode', cmd, options.exec_mode);
-  }).on('--help', function() {
-    console.log();
-    console.log();
-    console.log('  Examples:');
-    console.log();
-    console.log('    $ temp sequential');
-    console.log('    $ temp async');
-    console.log();
+  .command('serve')
+  .description('Easily test your web locally while developing.')
+  .action(() => {
+    serve();
   });
-*/
+
   program.parse(process.argv);
