@@ -3,7 +3,7 @@ This is a tool to generate project of GMobile from the terminal.
 
 ## Prerequisites
 Both the CLI and generated project have dependencies that require Node 6.9.0 or higher, together
-with NPM 3 or higher.
+with NPM 3 or higher
 
 ## Table of Contents
 * [Installation](#installation)
