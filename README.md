@@ -87,6 +87,8 @@ Server running at http://localhost:3000
 - [Inquirer.js](https://github.com/SBoudrias/Inquirer.js) - A collection of common interactive command line user interfaces.
 - [commander.js](https://github.com/tj/commander.js) - node.js command-line interfaces made easy.
 - [chalk](https://github.com/chalk/chalk) - Terminal string styling done right.
+- [express](https://github.com/expressjs/express) - Web framework for node.
+- [open](https://github.com/pwnall/node-open) - Open a file or url in the user's preferred application.
 
 ## License
 MIT
