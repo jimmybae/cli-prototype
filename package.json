@@ -16,15 +16,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "clear": "0.0.1",
+    "chalk": "^2.3.0",
     "colors": "^1.1.2",
     "commander": "^2.12.2",
     "express": "^4.16.2",
-    "figlet": "^1.2.0",
     "fs-extra": "^5.0.0",
     "inquirer": "^5.0.0",
-    "open": "0.0.5",
-    "write": "^1.0.3"
+    "open": "0.0.5"
   },
   "devDependencies": {}
 }
