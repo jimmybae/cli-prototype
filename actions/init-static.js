@@ -1,6 +1,29 @@
 const fs = require('fs');
+const path = require('path');
 const logger = require('../logger.js');
 const projectNameSubfix = '';
+
+const createPackageJson = (projectName, newProjectPath) => {
+  const packageJson = {
+    name: projectName,
+    version: '0.0.1',
+    description: 'GMobile Project',
+    author: '',
+    license: '',
+    main: '',
+    scripts: {
+      test: 'echo \"Error: no test specified\" && exit 1'
+    },
+    dependencies: {},
+    devDependencies: {}
+  };
+  const packageJsonFile = `${newProjectPath}/package.json`;
+  fs.writeFileSync(
+    packageJsonFile,
+    JSON.stringify(packageJson, null, 2)
+  );
+};
+
 const createDirectoryContents = (templatePath, newProjectPath) => {
   const filesToCreate = fs.readdirSync(templatePath);
   filesToCreate.forEach(file => {
@@ -31,8 +54,10 @@ const createDirectoryContents = (templatePath, newProjectPath) => {
 module.exports = (projectName, projectType) => {
   const templatePath = `${__dirname}/../templates-static/${projectType}`;
   const newProjectPath = `${projectName}${projectNameSubfix}`;
+  
   if (!fs.existsSync(newProjectPath)) {
     fs.mkdirSync(newProjectPath);
+    createPackageJson(projectName, newProjectPath);
     createDirectoryContents(templatePath, newProjectPath);
     logger.log(`Project <${projectName}${projectNameSubfix}> initialized successfuly.`);
   } else {
